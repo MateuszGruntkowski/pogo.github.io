@@ -1,0 +1,200 @@
+body {
+    margin: 0 0 0 0;
+    background-color: black;
+    font-family: Roboto;
+          
+}
+
+body:before {
+    content: "";
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/tlo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -9;
+    filter: blur(6px);
+
+}
+
+a {
+    text-decoration: none;
+} 
+
+.container 
+	{
+	max-width: 1600px;
+	margin: 0 auto 0 auto;
+	background-color: rgb(18, 18, 18);
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+	}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 60px;
+    align-items: center;
+    font-size: 22px;
+    background-color: black;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+    margin-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    
+}
+.link {
+    text-decoration: none;
+    font-family: Roboto;
+    color: white;
+    padding: 18px 18px 18px 18px;
+    
+}
+
+.link:hover {
+    color: rgb(190, 38, 190);    
+}
+
+.baner {
+    max-height: 250px;
+    
+}
+
+.baner-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.naglowek {
+    color: white;
+    font-size: 30px;
+    font-family: Roboto;
+    margin-top: 34px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+}
+
+.about {
+    color: white;
+    font-size: 30px;
+    font-family: Roboto;
+    margin-top: 34px;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 20px;
+    color: white;
+    font-family: Roboto;
+    margin-left: 16px;
+}
+
+.party-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.foto1 {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 4%;
+    box-shadow: 0px 0px 10px 8px rgb(96, 4, 87);
+}
+
+.foto1:hover {
+    box-shadow: 0px 0px 10px 10px rgb(200, 7, 180);
+    transition: 0.6s;
+}
+
+p {
+    margin-top: 0;
+}
+
+figcaption {
+    color: #fff;
+    font-family: Roboto;
+    text-align: center;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: black;
+    color: rgb(182, 182, 182);
+    font-family: Roboto;
+    text-align: center;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: 14px;
+}
+
+.fa {
+    padding: 20px;
+    width: 34px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    font-size: 38px !important;
+    border-radius: 50%;
+    color: white;
+}
+.fa-shopping-cart {
+    margin: 0 20px 0 0;
+    padding: 0 0 0 0;
+    display: flex;
+    text-align: center;
+}
+.fa:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+
+.zdjecie_produktu {
+    height: 416px;
+    width: 400px;
+    position: relative;
+    border-radius: 4%;
+    
+}
+
+.img_description {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.72);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+    border-radius: 4%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    line-height: 1.5;
+}
+
+.zdjecie_produktu:hover .img_description {
+    visibility: visible;
+    opacity: 1;
+    box-shadow: 0px 0px 10px 10px rgb(124, 4, 112);
+  }
+
+.produkt {
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+}
